@@ -1,8 +1,8 @@
 import { test, expect, type Page } from '@playwright/test';
-import { envVariables } from '../utils/envVariables'; 
+//import { envVariables } from '../utils/envVariables'; 
 
 test.beforeEach(async ({ page }) => {
-  await page.goto(envVariables.BASEURL);
+  await page.goto("https://demo.playwright.dev/todomvc/#/");
 });
 
 const TODO_ITEMS = [
