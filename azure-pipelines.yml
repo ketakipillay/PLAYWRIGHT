@@ -10,12 +10,12 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
-- checkout:self
-  displayName:"checkout repo"
+- checkout: self
+  displayName: 'checkout repo'
 
 - script: 
-  npm install
-  npx playwright install
-  npm install dotenv
-  npx playwright test --project=chromium
-  displayName: 'Run Playwright test'
+   npm install
+   npx playwright install
+   npm install dotenv
+   npx playwright test --project=chromium
+
