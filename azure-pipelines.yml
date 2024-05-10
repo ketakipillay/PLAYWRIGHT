@@ -16,6 +16,5 @@ steps:
 - script: 
    npm install
    npx playwright install
-   npm install dotenv
    npx playwright test --project=chromium
   displayName: 'Exceute Playwright tests'
