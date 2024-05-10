@@ -10,6 +10,7 @@ steps:
   displayName: 'checkout repo'
 
 - script: 
+   pwd
    npm install
    npx playwright install
    npx playwright test
