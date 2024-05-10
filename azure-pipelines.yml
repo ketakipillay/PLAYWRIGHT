@@ -12,5 +12,5 @@ steps:
 - script: 
    npm install
    npx playwright install
-   npx playwright test --project=chromium
+   npx playwright test
   displayName: 'Exceute Playwright tests'
