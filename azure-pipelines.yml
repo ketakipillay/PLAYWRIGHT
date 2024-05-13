@@ -13,6 +13,8 @@ steps:
   displayName: 'npm ci'
 - script: npx playwright install --with-deps
   displayName: 'Install Playwright browsers'
+- script: npm install dotenv
+  displayName: 'Install dotenv'
 - script: npx playwright test
   displayName: 'Run Playwright tests'
   env:
