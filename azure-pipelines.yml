@@ -10,13 +10,13 @@ steps:
   displayName: 'checkout repo'
 
 - script: 
-   cd PLAYWRIGHT
+   cd "PLAYWRIGHT"
    npm install
    npx playwright install
   displayName: 'Install playwright'
 
 - script: 
-   cd PLAYWRIGHT
+   cd "PLAYWRIGHT"
    npm install dotenv
    npx playwright test
   displayName: 'Execute playwright tests'
