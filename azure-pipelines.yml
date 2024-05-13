@@ -10,7 +10,6 @@ steps:
   displayName: 'checkout repo'
 
 - script: 
-   cd "PLAYWRIGHT"
    npm install
    npx playwright install
   displayName: 'Install playwright'
