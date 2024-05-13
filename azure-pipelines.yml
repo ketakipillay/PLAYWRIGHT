@@ -12,6 +12,11 @@ steps:
 - script: 
    cd PLAYWRIGHT
    npm install
-   npx playwright install
+   npm init playwright@latest
+   npm install dotenv
+  displayName: 'Install playwright'
+
+- script: 
+   cd PLAYWRIGHT
    npx playwright test
-  displayName: 'Exceute Playwright tests'
+  displayName: 'Execute playwright tests'
