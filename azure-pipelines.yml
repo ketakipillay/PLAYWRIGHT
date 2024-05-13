@@ -12,10 +12,9 @@ steps:
 - script: 
    npm install
    npx playwright install
+   npm install dotenv
   displayName: 'Install playwright'
 
 - script: 
-   cd "PLAYWRIGHT"
-   npm install dotenv
    npx playwright test
   displayName: 'Execute playwright tests'
