@@ -15,7 +15,7 @@ test.describe('New Todo', () => {
   test('should allow me to add todo items', async ({ page }) => {
     // create a new todo locator
     const newTodo = page.getByPlaceholder('What needs to be done?');
-
+    console.log("envVariables.BASEURL :"+envVariables.BASEURL);
     // Create 1st todo.
     await newTodo.fill(TODO_ITEMS[0]);
     await newTodo.press('Enter');
