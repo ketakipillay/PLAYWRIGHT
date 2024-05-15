@@ -31,8 +31,6 @@ steps:
   condition: succeededOrFailed()
 - task: PublishPipelineArtifact@1
   inputs:
-    script: 
-    mkdir $(System.DefaultWorkingDirectory)/playwright-report
     targetPath: playwright-report
     artifact: playwright-report
     publishLocation: 'pipeline'
