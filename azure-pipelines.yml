@@ -4,6 +4,13 @@ trigger:
 pool:
   vmImage: ubuntu-latest
 
+variables:
+- group: Luma-Variables
+- name: EMAIL
+  value: $[variables.EMAIL]
+- name: PASSWORD
+  value: $[variables.PASSWORD]
+
 steps:
 - task: NodeTool@0
   inputs:
